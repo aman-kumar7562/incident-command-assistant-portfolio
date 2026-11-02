@@ -1,73 +1,40 @@
-# Incident Command Assistant
+# The Evolved Incident Commander
 
-**Evidence-first incident analysis, from first signal to a human-reviewed update.**
+![An incident commander bringing fragmented signals into one operational picture](docs/images/incident-command-ai-cover.png)
 
-![End-to-end incident review process](docs/images/end-to-end-review.svg)
+**AI should help incident commanders see more clearly and act with better context. It should not take the command.**
 
-This portfolio project packages a reusable instruction workflow for incident commanders. It helps turn incident notes, service updates, and metrics into a clear view of customer impact, uncertainty, response progress, and next decisions.
+I believe incident command is evolving beyond running a bridge, collecting updates, and following a process. Those fundamentals still matter, but today’s systems ask more of the incident commander: connect service signals to customer impact, make uncertainty visible, align teams around the evidence, and verify recovery.
 
-It is designed to make the incident easier to understand—not to take command. The assistant analyzes and drafts; a human verifies and decides what to communicate or do.
+I have been applying AI to the repetitive first pass—organizing updates, building timelines, surfacing gaps, and preparing drafts—so people can focus on judgment, coordination, and decisions. The human remains accountable for what happens next.
 
-## The objective
+## Featured article
 
-During an incident, evidence is fragmented across updates, dashboards, alerts, and responder notes. This assistant provides a consistent way to:
+### The Evolved Incident Commander: Seeing Outages Through an AI Lens
 
-- Explain the broken customer journey in everyday language.
-- Separate facts, attributed reports, hypotheses, conflicts, and unknowns.
-- Bound customer impact without inventing totals or percentages.
-- Assess urgency and impact using the organization’s supplied policy.
-- Track mitigation, validation, recovery, and follow-up actions distinctly.
-- Prepare concise briefings for human review.
+An outage is a fast-moving decision environment. This article explores how AI can help an incident commander form a clearer operational picture, move from reporting activity to directing attention, and extend traditional ITIL foundations with evidence-led, customer-focused response.
 
-## Understand the service flow
+[Read the full article](blog/evolved-incident-commander.md)
 
-![Fictional appointment-service flow with an example failure boundary](docs/images/service-flow.svg)
+![Illustration of fragmented incident evidence organized for human decision-making](docs/images/ai-assisted-incident-command.png)
 
-The pictured flow is fictional and illustrates how to describe a user journey. For any real incident, build the flow from supplied evidence; do not assume that the example components or fault location apply.
+## The perspective
 
-## Scenarios covered
+- **AI organizes; people command.** Use AI to synthesize authorized evidence and prepare a first pass. People validate, set direction, communicate, and approve action.
+- **Customer impact comes first.** Explain what users cannot do before getting lost in component names.
+- **Uncertainty stays visible.** Separate confirmed facts, reports, hypotheses, conflicts, and unknowns.
+- **Recovery is verified.** A mitigation or one successful test does not prove every customer path is restored.
+- **Measure the benefit.** Evaluate time to an evidence-backed briefing and the quality of human review instead of claiming unmeasured savings.
 
-![Scenario coverage and expected assistant behavior](docs/images/scenario-coverage.svg)
+## A practical example
 
-The scenario map shows the core reasoning challenges: incomplete evidence, conflicting updates, partial recovery, and requests to take operational actions. More detail is in [`docs/scenarios.md`](docs/scenarios.md).
+The article uses a fictional booking-service outage to show how an assistant can distinguish a completed rollback from verified recovery. The companion workflow and diagrams are provider-neutral and use synthetic evidence.
 
-## End-to-end process
+- [How the review flows end to end](docs/images/end-to-end-review.svg)
+- [How the customer journey can be mapped](docs/images/service-flow.svg)
+- [Scenarios and expected behavior](docs/scenarios.md)
+- [Architecture and trust boundaries](docs/architecture.md)
 
-1. **Scope** the incident, service, region, and time window.
-2. **Read** supplied or authorized evidence and record its source window.
-3. **Trace** the timeline, customer journey, and service flow.
-4. **Assess** customer impact and urgency/impact using current supplied guidance.
-5. **Review** cause, mitigation, validation, recovery, and open actions.
-6. **Draft** the requested update and identify the highest-value gaps.
-7. **Human review:** verify the evidence and decide what to share or execute.
+---
 
-The assistant does not post updates, page responders, edit records, deploy changes, or declare recovery on its own.
-
-## Repository guide
-
-- [`skill/SKILL.md`](skill/SKILL.md) — the reusable assistant instruction.
-- [`skill/references/review-playbook.md`](skill/references/review-playbook.md) — evidence-led full review workflow.
-- [`skill/references/output-contracts.md`](skill/references/output-contracts.md) — concise review and update structures.
-- [`skill/references/safety-boundaries.md`](skill/references/safety-boundaries.md) — privacy, credential, and operational safeguards.
-- [`docs/architecture.md`](docs/architecture.md) — components, request flow, and trust boundary.
-- [`docs/scenarios.md`](docs/scenarios.md) — scenario goals and expected behavior.
-- [`docs/validation-plan.md`](docs/validation-plan.md) — proposed synthetic evaluation plan.
-- [`examples/synthetic-case.md`](examples/synthetic-case.md) and [`examples/sample-review.md`](examples/sample-review.md) — fictional input and illustrative output.
-
-## Try it
-
-Provide a compatible assistant with the files under `skill/` and a fictional or properly authorized evidence set. For example:
-
-> Review this incident evidence. Summarize the customer impact, what is confirmed about recovery, the next open actions, and the most important uncertainty. Do not perform any incident operations.
-
-The sample review demonstrates the intended evidence discipline. Adapt the package to your organization’s approved communication templates and priority policy before operational use.
-
-## Safety and privacy
-
-This public edition uses synthetic evidence and provider-neutral guidance. Never publish secrets, internal-only URLs, customer identifiers, confidential incident records, or proprietary policies. The instruction pack is not a permission boundary; the host platform must enforce access and tool permissions.
-
-See [`skill/references/safety-boundaries.md`](skill/references/safety-boundaries.md) and [`docs/validation-plan.md`](docs/validation-plan.md).
-
-## Project status
-
-Provider-neutral portfolio material with fictional examples. No license is included yet; choose one before inviting reuse. No production integrations or operational actions are included.
+*Written by Aman Kumar. A practical exploration of AI-enabled incident command, evidence-led operations, and human accountability.*
