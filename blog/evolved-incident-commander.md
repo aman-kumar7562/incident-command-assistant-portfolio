@@ -2,7 +2,7 @@
 
 *AI should help incident commanders see more clearly and act with better context. It should not take the command.*
 
-![End-to-end incident review process](../docs/images/end-to-end-review.svg)
+![An incident commander bringing fragmented signals into one operational picture](../docs/images/incident-command-ai-cover.png)
 
 An outage is more than a technical failure. It is a fast-moving decision environment: signals change, customer impact develops, dependencies behave in unexpected ways, and teams need a shared understanding of what is happening.
 
@@ -20,7 +20,7 @@ The shift I am working toward is simple: less time copying updates into a new fo
 
 I have been applying AI to repetitive first-pass tasks around incident work—organizing updates, assembling timelines, making uncertainty visible, and preparing drafts. I also built a provider-neutral incident-review assistant to explore that workflow with synthetic evidence. It is an experiment in how AI can help an incident commander build a clearer operational picture without taking authority away from people.
 
-![Fictional appointment-service flow](../docs/images/service-flow.svg)
+![Illustration of fragmented incident evidence organized for human decision-making](../docs/images/ai-assisted-incident-command.png)
 
 ## What an AI-assisted review can do
 
