@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">ThousandEyes concept for outside-in network path evidence</title>
+  <desc id="desc">A conceptual network path map compares configured vantage points through DNS, transit, edge, and a fictional application endpoint. One path has an illustrative delay marker.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#edf7fc"/><stop offset="1" stop-color="#f9fcfe"/></linearGradient>
+    <style>
+      .h{font:700 29px 'Segoe UI',Arial,sans-serif;fill:#16354a}.s{font:400 15px 'Segoe UI',Arial,sans-serif;fill:#587284}.head{font:700 16px 'Segoe UI',Arial,sans-serif;fill:#17425a}.copy{font:400 13px 'Segoe UI',Arial,sans-serif;fill:#536b7b}.tiny{font:700 11px 'Segoe UI',Arial,sans-serif;letter-spacing:1px;fill:#247da0}.node{fill:#fff;stroke:#8cbad0;stroke-width:2}.edge{fill:none;stroke:#1d9bc2;stroke-width:4;stroke-linecap:round}.warn{fill:none;stroke:#e48b34;stroke-width:5;stroke-linecap:round}.box{fill:#fff;stroke:#cfdee7;stroke-width:1.5}
+    </style>
+  </defs>
+  <rect width="1200" height="680" rx="22" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="92" rx="22" fill="#dff0f7"/><rect x="0" y="72" width="1200" height="20" fill="#dff0f7"/>
+  <circle cx="57" cy="46" r="18" fill="#087fa8"/><circle cx="57" cy="46" r="7" fill="#e9f8ff"/><circle cx="43" cy="46" r="3" fill="#e9f8ff"/><circle cx="70" cy="37" r="3" fill="#e9f8ff"/>
+  <text x="91" y="55" class="h">ThousandEyes</text><text x="300" y="54" class="s">Outside-in path evidence</text>
+  <rect x="958" y="30" width="195" height="30" rx="15" fill="#fff" stroke="#80b8cd"/><text x="980" y="50" class="tiny">CONCEPTUAL • SYNTHETIC</text>
+  <text x="54" y="137" class="tiny">COMPARE CONFIGURED TEST VANTAGE POINTS</text>
+  <rect x="50" y="158" width="806" height="434" rx="18" fill="#f7fbfd" stroke="#cbdde6"/>
+  <path d="M141 268 C236 268 238 316 327 316 S421 268 514 268 S604 316 695 316 S755 268 807 268" class="edge"/>
+  <path d="M141 431 C236 431 238 383 327 383 S421 431 514 431 S604 383 695 383 S755 431 807 431" class="edge"/>
+  <path d="M514 268 C566 268 570 316 614 316" class="warn"/>
+  <path d="M514 431 C566 431 570 383 614 383" class="edge"/>
+  <circle cx="141" cy="268" r="27" class="node"/><text x="112" y="273" class="copy">A</text>
+  <circle cx="141" cy="431" r="27" class="node"/><text x="112" y="436" class="copy">B</text>
+  <circle cx="327" cy="316" r="24" class="node"/><circle cx="327" cy="383" r="24" class="node"/>
+  <circle cx="514" cy="268" r="24" class="node"/><circle cx="514" cy="431" r="24" class="node"/>
+  <circle cx="614" cy="316" r="26" fill="#fff4e4" stroke="#e4a556" stroke-width="2"/><circle cx="614" cy="383" r="26" class="node"/>
+  <circle cx="807" cy="268" r="30" fill="#e7f7fb" stroke="#1687aa" stroke-width="2.5"/><circle cx="807" cy="431" r="30" fill="#e7f7fb" stroke="#1687aa" stroke-width="2.5"/>
+  <text x="91" y="217" class="head">Configured agents</text><text x="269" y="217" class="head">DNS</text><text x="455" y="217" class="head">Transit</text><text x="570" y="217" class="head">Edge</text><text x="744" y="217" class="head">Service</text>
+  <text x="79" y="310" class="copy">Location A</text><text x="79" y="473" class="copy">Location B</text>
+  <text x="291" y="357" class="copy">resolve</text><text x="473" y="485" class="copy">path</text><text x="571" y="348" class="copy">delay?</text><text x="753" y="310" class="copy">booking</text><text x="753" y="473" class="copy">booking</text>
+  <rect x="82" y="516" width="355" height="48" rx="12" fill="#eaf6fb" stroke="#c4e0eb"/><circle cx="108" cy="540" r="7" fill="#1687aa"/><text x="127" y="545" class="copy">Path A: no broad change observed</text>
+  <rect x="455" y="516" width="355" height="48" rx="12" fill="#fff4e4" stroke="#f0d1a5"/><circle cx="481" cy="540" r="7" fill="#e48b34"/><text x="500" y="545" class="copy">Path B: investigate one segment</text>
+
+  <rect x="887" y="158" width="263" height="434" rx="18" class="box"/>
+  <text x="916" y="198" class="tiny">IC READOUT</text>
+  <text x="916" y="239" class="head">What this adds</text>
+  <text x="916" y="270" class="copy">A view from selected</text><text x="916" y="290" class="copy">network and service locations.</text>
+  <line x1="916" y1="313" x2="1120" y2="313" stroke="#dbe7ed"/>
+  <text x="916" y="348" class="head">What it cannot prove</text>
+  <text x="916" y="379" class="copy">That every customer has</text><text x="916" y="399" class="copy">the same path or experience.</text>
+  <line x1="916" y1="422" x2="1120" y2="422" stroke="#dbe7ed"/>
+  <text x="916" y="457" class="head">Next question</text>
+  <text x="916" y="488" class="copy">Does the affected user journey</text><text x="916" y="508" class="copy">share this path and time window?</text>
+  <text x="54" y="636" class="s">Illustration only. Vantage points, tests, and path visibility depend on the environment’s configuration.</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Grafana concept for incident metrics</title>
+  <desc id="desc">A conceptual Grafana-style metrics view with synthetic request volume, latency, error, and capacity trends aligned to the same incident window.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f8fafc"/><stop offset="1" stop-color="#e9eef5"/></linearGradient>
+    <style>
+      .h{font:700 29px 'Segoe UI',Arial,sans-serif;fill:#182233}.s{font:400 15px 'Segoe UI',Arial,sans-serif;fill:#64748b}.card{fill:#fff;stroke:#d7dee8;stroke-width:1.5}.label{font:700 15px 'Segoe UI',Arial,sans-serif;fill:#273449}.small{font:400 12px 'Segoe UI',Arial,sans-serif;fill:#718096}.legend{font:600 12px 'Segoe UI',Arial,sans-serif;fill:#445168}.note{font:600 15px 'Segoe UI',Arial,sans-serif;fill:#243248}
+    </style>
+  </defs>
+  <rect width="1200" height="680" rx="22" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="90" rx="22" fill="#202431"/>
+  <rect x="0" y="68" width="1200" height="22" fill="#202431"/>
+  <circle cx="55" cy="45" r="17" fill="#ff8f2f"/><path d="M56 30 C43 43 49 47 44 56 C56 61 68 53 65 42 C63 36 60 33 56 30Z" fill="#fff4e8"/>
+  <text x="88" y="54" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700" fill="#fff">Grafana</text>
+  <text x="250" y="53" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#d4d9e2">Compare trends across one incident window</text>
+  <rect x="946" y="30" width="206" height="30" rx="15" fill="#3a3440" stroke="#ff8f2f"/><text x="966" y="50" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#ffd0a4">ILLUSTRATIVE • SYNTHETIC</text>
+  <rect x="48" y="119" width="1104" height="45" rx="12" fill="#fff" stroke="#d7dee8"/>
+  <text x="70" y="147" class="label">Service:</text><text x="132" y="147" class="s">booking-confirmation (fictional)</text>
+  <text x="458" y="147" class="label">Window:</text><text x="526" y="147" class="s">before alert → detection → now</text>
+  <text x="891" y="147" class="label">Question:</text><text x="968" y="147" class="s">what changed?</text>
+
+  <g>
+    <rect x="48" y="185" width="528" height="190" rx="14" class="card"/>
+    <text x="72" y="216" class="label">Request latency</text><text x="470" y="216" class="small">relative trend</text>
+    <line x1="88" y1="336" x2="544" y2="336" stroke="#e7ebf1"/><line x1="88" y1="300" x2="544" y2="300" stroke="#e7ebf1"/><line x1="88" y1="264" x2="544" y2="264" stroke="#e7ebf1"/>
+    <line x1="88" y1="240" x2="88" y2="338" stroke="#cbd5e1"/><line x1="88" y1="338" x2="544" y2="338" stroke="#cbd5e1"/>
+    <path d="M90 317 C145 314 165 319 212 312 S286 315 329 306 S386 301 415 285 S467 274 489 249 S520 251 542 230" fill="none" stroke="#ff8f2f" stroke-width="4" stroke-linecap="round"/>
+    <line x1="414" y1="239" x2="414" y2="338" stroke="#d36b25" stroke-dasharray="5 5"/><text x="393" y="360" class="small">alert</text>
+    <text x="90" y="360" class="small">earlier</text><text x="501" y="360" class="small">now</text>
+  </g>
+  <g>
+    <rect x="600" y="185" width="552" height="190" rx="14" class="card"/>
+    <text x="624" y="216" class="label">Errors and request volume</text>
+    <line x1="640" y1="336" x2="1120" y2="336" stroke="#e7ebf1"/><line x1="640" y1="300" x2="1120" y2="300" stroke="#e7ebf1"/><line x1="640" y1="264" x2="1120" y2="264" stroke="#e7ebf1"/>
+    <line x1="640" y1="240" x2="640" y2="338" stroke="#cbd5e1"/><line x1="640" y1="338" x2="1120" y2="338" stroke="#cbd5e1"/>
+    <path d="M642 298 C699 294 730 300 772 295 S853 300 895 291 S964 297 1002 295 S1063 291 1117 294" fill="none" stroke="#3385c6" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M642 325 C705 327 737 323 780 325 S850 321 895 318 S953 304 996 284 S1054 277 1117 255" fill="none" stroke="#bb4b5b" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="773" cy="295" r="4" fill="#3385c6"/><circle cx="1002" cy="284" r="4" fill="#bb4b5b"/>
+    <line x1="896" y1="240" x2="896" y2="338" stroke="#d36b25" stroke-dasharray="5 5"/>
+    <line x1="648" y1="355" x2="673" y2="355" stroke="#3385c6" stroke-width="4"/><text x="682" y="360" class="legend">request volume</text>
+    <line x1="805" y1="355" x2="830" y2="355" stroke="#bb4b5b" stroke-width="4"/><text x="839" y="360" class="legend">error trend</text>
+  </g>
+
+  <rect x="48" y="396" width="1104" height="122" rx="14" fill="#fff" stroke="#d7dee8"/>
+  <text x="72" y="429" class="label">Capacity context</text>
+  <rect x="72" y="449" width="310" height="44" rx="10" fill="#edf6f2"/><circle cx="97" cy="471" r="8" fill="#58a77c"/><text x="117" y="476" class="legend">Compute trend: within usual range</text>
+  <rect x="401" y="449" width="310" height="44" rx="10" fill="#fff4e4"/><circle cx="426" cy="471" r="8" fill="#f0a63b"/><text x="446" y="476" class="legend">Dependency wait: check separately</text>
+  <rect x="730" y="449" width="396" height="44" rx="10" fill="#eef2f8"/><circle cx="755" cy="471" r="8" fill="#70839d"/><text x="775" y="476" class="legend">One view cannot establish root cause</text>
+  <rect x="48" y="540" width="1104" height="84" rx="14" fill="#fff3e8" stroke="#ffd0a4"/>
+  <text x="74" y="573" class="note">IC question</text><text x="178" y="573" class="note">Is the latency change isolated to the customer path, or shared with other workloads?</text>
+  <text x="74" y="601" class="small">Use aligned time windows and the affected service scope. Synthetic sketch; no real measurements or live dashboard.</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">PagerDuty concept for incident responder routing</title>
+  <desc id="desc">A conceptual flow from a triggered alert through a configured service and on-call route to the responding teams, with the incident commander coordinating context and decisions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#19182b"/><stop offset="1" stop-color="#2b1f37"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#ffab74"/></marker>
+    <style>
+      .h{font:700 29px 'Segoe UI',Arial,sans-serif;fill:#fff8f4}.s{font:400 15px 'Segoe UI',Arial,sans-serif;fill:#d4c8d8}.label{font:700 17px 'Segoe UI',Arial,sans-serif;fill:#fff}.copy{font:400 13px 'Segoe UI',Arial,sans-serif;fill:#dacfdc}.tiny{font:700 11px 'Segoe UI',Arial,sans-serif;letter-spacing:1px;fill:#ffbf94}.box{fill:#35283f;stroke:#68506e;stroke-width:1.5}.flow{fill:none;stroke:#ffab74;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="680" rx="22" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="92" rx="22" fill="#302238"/><rect x="0" y="72" width="1200" height="20" fill="#302238"/>
+  <rect x="48" y="27" width="38" height="38" rx="12" fill="#f36b45"/><path d="M67 33 L58 47 H66 L62 59 L78 42 H70 L74 33Z" fill="#fff"/>
+  <text x="102" y="55" class="h">PagerDuty</text><text x="265" y="54" class="s">Mobilize responders; keep the IC decision-led</text>
+  <rect x="956" y="30" width="196" height="30" rx="15" fill="#463247" stroke="#ffab74"/><text x="980" y="50" class="tiny">CONCEPTUAL • SYNTHETIC</text>
+
+  <text x="56" y="139" class="tiny">ALERT ROUTING IS THE START OF RESPONSE</text>
+  <rect x="52" y="182" width="210" height="116" rx="18" class="box"/><circle cx="88" cy="221" r="18" fill="#b7384b"/><path d="M88 207 L91 223 L85 223Z" fill="#fff"/><text x="117" y="222" class="label">Triggered alert</text><text x="76" y="257" class="copy">A rule or integration fires</text><text x="76" y="278" class="copy">on a configured service</text>
+  <path d="M262 240 L330 240" class="flow"/>
+  <rect x="338" y="182" width="210" height="116" rx="18" class="box"/><text x="366" y="221" class="label">Service route</text><text x="362" y="257" class="copy">Configured ownership</text><text x="362" y="278" class="copy">and escalation rules</text>
+  <path d="M548 240 L616 240" class="flow"/>
+  <rect x="624" y="182" width="210" height="116" rx="18" class="box"/><text x="652" y="221" class="label">On-call responder</text><text x="648" y="257" class="copy">Acknowledges and begins</text><text x="648" y="278" class="copy">the technical investigation</text>
+  <path d="M834 240 L902 240" class="flow"/>
+  <rect x="910" y="182" width="238" height="116" rx="18" fill="#493041" stroke="#ffab74" stroke-width="1.7"/><text x="940" y="221" class="label">IC-led response</text><text x="934" y="257" class="copy">Scope impact, set roles,</text><text x="934" y="278" class="copy">coordinate decisions</text>
+
+  <path d="M1028 298 L1028 352" class="flow"/>
+  <rect x="740" y="364" width="408" height="170" rx="18" fill="#30243b" stroke="#8b6383" stroke-width="1.5"/>
+  <text x="770" y="400" class="tiny">COORDINATED WORKSTREAMS</text>
+  <rect x="770" y="422" width="108" height="78" rx="12" fill="#3d3048"/><text x="786" y="452" class="label">App</text><text x="786" y="477" class="copy">request path</text>
+  <rect x="892" y="422" width="108" height="78" rx="12" fill="#3d3048"/><text x="908" y="452" class="label">Infra</text><text x="908" y="477" class="copy">capacity / path</text>
+  <rect x="1014" y="422" width="108" height="78" rx="12" fill="#3d3048"/><text x="1030" y="452" class="label">Service</text><text x="1030" y="477" class="copy">customer checks</text>
+  <path d="M740 447 L670 447 L670 300" fill="none" stroke="#b48ca8" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <rect x="52" y="360" width="602" height="174" rx="18" fill="#fff6ee" stroke="#ffd2b5" stroke-width="1.5"/>
+  <text x="82" y="401" font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#9f4a27">IC DECISION FRAME</text>
+  <text x="82" y="441" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="700" fill="#452c2c">An acknowledged page means a responder is engaged.</text>
+  <text x="82" y="474" font-family="Segoe UI,Arial,sans-serif" font-size="16" fill="#644c4c">It does not establish impact, root cause, or customer recovery.</text>
+  <text x="82" y="506" font-family="Segoe UI,Arial,sans-serif" font-size="14" fill="#796564">The IC supplies context and checks evidence while the technical leads investigate.</text>
+  <text x="56" y="613" class="s">Illustration only. Notification targets and escalation behavior depend on configured services, schedules, and policies.</text>
+</svg>
