@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">First 15 minutes of incident command</title>
+  <desc id="desc">A four-stage example rhythm: frame impact, connect observability signals, test hypotheses across layers, then set owners and decision points.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111b2e"/><stop offset="1" stop-color="#1a2a43"/></linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#75dbd6"/></marker>
+    <style>
+      .title{font:700 29px 'Segoe UI',Arial,sans-serif;fill:#f7f9ff}.sub{font:400 15px 'Segoe UI',Arial,sans-serif;fill:#b8c6da}
+      .time{font:700 13px 'Segoe UI',Arial,sans-serif;letter-spacing:1px;fill:#8ce5df}.head{font:700 19px 'Segoe UI',Arial,sans-serif;fill:#fff}
+      .copy{font:400 14px 'Segoe UI',Arial,sans-serif;fill:#cfdaea}.pill{font:700 12px 'Segoe UI',Arial,sans-serif;fill:#122033}
+    </style>
+  </defs>
+  <rect width="1200" height="560" rx="22" fill="url(#bg)"/>
+  <text x="54" y="62" class="title">The first 15 minutes: build a testable picture</text>
+  <text x="54" y="90" class="sub">A sample operating rhythm for an evolving incident, not a fixed policy.</text>
+  <line x1="112" y1="161" x2="1080" y2="161" stroke="#75dbd6" stroke-width="3" marker-end="url(#arrow)"/>
+  <circle cx="145" cy="161" r="12" fill="#75dbd6"/><circle cx="445" cy="161" r="12" fill="#75dbd6"/><circle cx="745" cy="161" r="12" fill="#75dbd6"/><circle cx="1045" cy="161" r="12" fill="#75dbd6"/>
+
+  <rect x="52" y="197" width="250" height="276" rx="18" fill="#22324d" stroke="#4a6686" stroke-width="1.5"/>
+  <rect x="72" y="218" width="82" height="26" rx="13" fill="#82d7ef"/><text x="87" y="236" class="pill">0–3 MIN</text>
+  <text x="72" y="280" class="head">Frame impact</text>
+  <text x="72" y="312" class="copy">What can customers not do?</text>
+  <text x="72" y="339" class="copy">When and where did it start?</text>
+  <text x="72" y="366" class="copy">What is confirmed vs reported?</text>
+  <line x1="72" y1="392" x2="278" y2="392" stroke="#425774"/>
+  <text x="72" y="425" class="time">OUTPUT</text>
+  <text x="72" y="450" class="copy">A plain-language problem frame</text>
+
+  <rect x="352" y="197" width="250" height="276" rx="18" fill="#22324d" stroke="#4a6686" stroke-width="1.5"/>
+  <rect x="372" y="218" width="82" height="26" rx="13" fill="#a7e3a9"/><text x="387" y="236" class="pill">3–7 MIN</text>
+  <text x="372" y="280" class="head">Connect signals</text>
+  <text x="372" y="312" class="copy">Map the affected journey</text>
+  <text x="372" y="339" class="copy">Compare time and scope</text>
+  <text x="372" y="366" class="copy">Check outside-in and inside-out</text>
+  <line x1="372" y1="392" x2="578" y2="392" stroke="#425774"/>
+  <text x="372" y="425" class="time">OUTPUT</text>
+  <text x="372" y="450" class="copy">A shared service-path view</text>
+
+  <rect x="652" y="197" width="250" height="276" rx="18" fill="#22324d" stroke="#4a6686" stroke-width="1.5"/>
+  <rect x="672" y="218" width="92" height="26" rx="13" fill="#f4d08a"/><text x="687" y="236" class="pill">7–11 MIN</text>
+  <text x="672" y="280" class="head">Test hypotheses</text>
+  <text x="672" y="312" class="copy">App, platform, network, dependency</text>
+  <text x="672" y="339" class="copy">Assign one discriminating check</text>
+  <text x="672" y="366" class="copy">Keep conflicts and unknowns visible</text>
+  <line x1="672" y1="392" x2="878" y2="392" stroke="#425774"/>
+  <text x="672" y="425" class="time">OUTPUT</text>
+  <text x="672" y="450" class="copy">Owned, comparable investigation</text>
+
+  <rect x="952" y="197" width="196" height="276" rx="18" fill="#174b5c" stroke="#65d5d2" stroke-width="1.7"/>
+  <rect x="972" y="218" width="92" height="26" rx="13" fill="#89e7dc"/><text x="987" y="236" class="pill">11–15 MIN</text>
+  <text x="972" y="280" class="head">Set decisions</text>
+  <text x="972" y="312" class="copy">Owners and next checks</text>
+  <text x="972" y="339" class="copy">Risk and success signal</text>
+  <text x="972" y="366" class="copy">Next update time</text>
+  <line x1="972" y1="392" x2="1128" y2="392" stroke="#43808a"/>
+  <text x="972" y="425" class="time">OUTPUT</text>
+  <text x="972" y="450" class="copy">A decision-ready briefing</text>
+
+  <text x="54" y="520" class="sub">The IC creates clarity before certainty: evidence → test → owner → decision → verification.</text>
+</svg>
